@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CompareNETObjects" Version="4.56.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Hosting" Version="2.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.1.1" />
+    <PackageReference Include="automapper" Version="7.0.1" />
+    <PackageReference Include="MediatR" Version="5.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.ViewFeatures" Version="2.1.1" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.9.0-preview-20180924-03" />
+    <PackageReference Include="Moq" Version="4.10.0" />
+    <PackageReference Include="Neleus.LambdaCompare" Version="1.0.2" />
+    <PackageReference Include="shouldly" Version="3.0.1" />
+    <PackageReference Include="xunit" Version="2.4.1-pre.build.4059" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.1-pre.build.4059">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Hungry.Bear.API\Hungry.Bear.API.csproj" />
+    <ProjectReference Include="..\..\src\Hungry.Bear.Common\Hungry.Bear.Common.csproj" />
+    <ProjectReference Include="..\..\src\Hungry.Bear.DataAccess\Hungry.Bear.DataAccess.csproj" />
+    <ProjectReference Include="..\..\src\Hungry.Bear.Domain\Hungry.Bear.Domain.csproj" />
+    <ProjectReference Include="..\..\src\Hungry.Bear.Infrastructure\Hungry.Bear.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
